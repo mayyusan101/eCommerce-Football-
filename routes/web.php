@@ -17,6 +17,6 @@ Route::get('/', function () {
     return inertia('Home');
 })->name('home');
 
-Route::get('contact', function () {
-    return view('home');
-})->name('contact');
+Route::get('/dashboard', function () {
+    return inertia('Dashboard');
+})->name('home');
